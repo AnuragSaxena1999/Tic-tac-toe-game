@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="javascriptreact">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <!-- <img src="#" alt="gif"> -->
+            <h4></h4>
+            <!-- <p>The correct word was: <b></b></p> -->
+            <button class="play-again" onclick="playAgain()">Play Again</button>
+        </div>
+    </div>
+    <div class="badacontainer">
+        <h2>Tic Tac Toe Game</h2>
+
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div id="0" onclick="handleClick(this)" class="column"></div>
+                    <div id="1" onclick="handleClick(this)" class="column"></div>
+                    <div id="2" onclick="handleClick(this)" class="column"></div>
+                </div>
+                <div class="row">
+                    <div id="3" onclick="handleClick(this)" class="column"></div>
+                    <div id="4" onclick="handleClick(this)" class="column"></div>
+                    <div id="5" onclick="handleClick(this)" class="column"></div>
+                </div>
+                <div class="row">
+                    <div id="6" onclick="handleClick(this)" class="column"></div>
+                    <div id="7" onclick="handleClick(this)" class="column"></div>
+                    <div id="8" onclick="handleClick(this)" class="column"></div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            
+        <button  onclick="playAgain()">Play Again</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-image:url("images/background.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: grey;
+}
+
+h2{
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-family: cursive;
+    color: black;
+    padding-bottom: 10px;
+    
+}
+.container{
+    display: flex;
+   
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 65px;
+    background-color: white;
+  
+}
+.game-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 0 10px;
+    transition: opacity 0.4s ease;
+}
+.game-modal.show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s 0.4s ease;
+}
+.game-modal .content{
+    padding: 30px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.game-modal button {
+    padding: 12px 23px;
+}
+.game-modal h4{
+    font-size: 1.5rem;
+}
+.row{
+    display: flex;
+}
+.column{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.btn button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
