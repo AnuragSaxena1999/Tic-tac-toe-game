@@ -22,7 +22,8 @@ const checkWinner = () =>{
         return;
     }
     if(!arr.some(e => e===null)){
-        document.write(`Draw`);
+        heading.innerText = `Draw!!!`
+        gameModal.classList.add("show");
         return;
     }
 }
